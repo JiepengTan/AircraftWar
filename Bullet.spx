@@ -1,5 +1,7 @@
-onTouched => {
-	destroy
+onTouchStart dstSp => {
+	if(dstSp != &Backdrop && dstSp != &MyAircraft ){
+		deleteThisClone
+	}
 }
 
 onCloned => {
